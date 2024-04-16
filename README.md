@@ -1,24 +1,13 @@
 # alpine-pkg-glog
 
-[![CircleCI](https://img.shields.io/circleci/project/sgerrand/alpine-pkg-glog/master.svg)](https://circleci.com/gh/sgerrand/alpine-pkg-glog)
+:warning: **Deprecated** :warning:
 
-This is the [Google logging module][glog] as an Alpine Linux package.
+[As of 2021-05-04](https://github.com/alpinelinux/aports/commit/c25075735b950f455d828e1a93de56cb6cd4032c),
+the `glog` package can and should be downloaded and installed from Alpine Linux's community repository.
 
-## Releases
+---
 
-See the [releases page][releases] for the latest download links.
+This was the [Google logging module][glog] packaged for [Alpine Linux][alpine-linux].
 
-## Installing
-
-The current installation method for these packages is to pull them in using
-`wget` or `curl` and install the local file with `apk`:
-
-```
-apk --no-cache add ca-certificates
-wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://raw.githubusercontent.com/sgerrand/alpine-pkg-glog/master/sgerrand.rsa.pub
-wget https://github.com/sgerrand/alpine-pkg-glog/releases/download/0.3.4-r0/glog-0.3.4-r0.apk
-apk --allow-untrusted add glog-0.3.4-r0.apk
-```
-
+[alpine-linux]: https://www.alpinelinux.org
 [glog]: https://github.com/google/glog
-[releases]: https://github.com/sgerrand/alpine-pkg-glog/releases/
